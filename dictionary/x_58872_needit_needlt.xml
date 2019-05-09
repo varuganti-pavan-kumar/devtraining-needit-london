@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Needlt" max_length="40" name="x_58872_needit_needlt" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Requested type" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="human resource1" sequence="0" value="hr1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="facilities" sequence="1" value="facilities"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="human resource 2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="facilities1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="facilities2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="legal1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="legal2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Your Department Choice1" sequence="6" value="your_choice1"/>
+                <element inactive_on_update="false" label="Your Depatment Choice2" sequence="7" value="your_choice2"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_currency_1" type="currency"/>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+    </element>
+</database>
